@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Access Blocked</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #ddd;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+    .logo img {
+      height: 60px;
+    }
+    .logo h1 {
+      font-size: 24px;
+      color: #fff;
+    }
+
+    .shield img {
+      width: 100px;
+      margin: 20px auto;
+    }
+
+    h2 {
+      color: #ff4444;
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .login-box {
+      background: #2a2a2a;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 30px auto;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    }
+    .login-box label {
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+      text-align: left;
+      color: #ccc;
+    }
+    .login-box input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #444;
+      border-radius: 4px;
+      background: #111;
+      color: #eee;
+      box-sizing: border-box;
+    }
+    .login-box button {
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+      background: #ff4444;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .login-box button:hover {
+      background: #ff6666;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fake Logo -->
+  <div class="logo">
+    <img src="../Untitled11.jpeg" alt="Firewall Logo">
+    <h1>Campus Firewall</h1>
+  </div>
+
+  <!-- Stop Shield -->
+  <div class="shield">
+    <img src="../Untitled.png" alt="Blocked">
+  </div>
+
+  <!-- Warning Text -->
+  <h2>Stop! This website is blocked</h2>
+  <p>The administrator of this network has restricted access to sites categorized as <b>Music/Streaming</b>.</p>
+  <p>If you believe this is a mistake, please login below to request access.</p>
+
+  <!-- Fake Login Box -->
+  <div class="login-box">
+    <form>
+      <label for="id">Roll Number:</label>
+      <input type="text" id="id" placeholder="Enter your Roll No." required>
+
+      <label for="reason">Reason:</label>
+      <input type="text" id="reason" placeholder="Enter reason to access" required>
+
+      <button type="submit">Request Access</button>
+    </form>
+  </div>
+
+</body>
+</html>
